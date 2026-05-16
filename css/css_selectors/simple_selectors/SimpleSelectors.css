@@ -55,3 +55,36 @@ p{
     border-radius: 15px;
     background-color: green;
 }
+
+#core_python_heading{
+    color: orange;
+    background-color: black;
+}
+#core_java_heading{
+    color: greenyellow;
+    background-color: gray;
+}
+#webdevelopment_heading{
+    color: navy;
+    background-color: lightblue;
+}
+#horizontal_line{
+    border: 3px solid navy;
+}
+
+#scrollable_content_marquee{
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+}
+
+/* class selector(.) */
+.increase_font_size{
+    font-size: 50px;
+}
+.change_color{
+    color: navy;
+    background-color: lightgray;
+}
