@@ -1,0 +1,57 @@
+/* 
+css rules sets definition
+selector{
+    css_property = css_property_value;
+    css_property = css_property_value;
+}
+*/
+
+/* universal selectors(*) */
+*{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* element selector(tagname) */
+h1{
+    font-size: 50px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+button{
+    height: 90px;
+    font-size: 50px;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+p{
+    color: navy;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+/* id selector(#) */
+#subscribe_button{
+    width: 300px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+#follow_button{
+    width: 200px;
+    border-radius: 15px;
+    background-color: royalblue;
+}
+
+#share_button{
+    width: 100px;
+    font-size: 50px;
+    border-radius: 15px;
+    background-color: green;
+}
