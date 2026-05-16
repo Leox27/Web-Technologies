@@ -1,0 +1,11 @@
+/* 
+css rule sets definition
+selector{
+    css_propery = css_property_value;
+    css_propery = css_property_value;
+}
+*/
+
+h1{
+    font-size: 75px; color: navy; background-color: lightgray; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border-radius: 15px; box-shadow: inset 0px 0px 5px gray, inset 0px 0px 10px gray, inset 0px 0px 15px gray, 0px 0px 10px black ;
+        }
