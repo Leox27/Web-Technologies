@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jolly+Lodger&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+/* 
+from line 4 to 11 we will mandatorily tyoe daily 
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: blueviolet; */
+    margin: 20px;
+}
+
+.course_headings{
+    font-size: 75px;
+    text-align: center;
+    color: greenyellow;
+    background-color: gray;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#web_development_heading{
+    font-family: 'Courier New', Courier, monospace;
+}
+#core_python_heading{
+    font-family: Indie Flower;
+}
+#advanced_python_heading{
+    font-family: Jolly Lodger;
+}
+#merry_christmas_heading{
+    font-family: Mountains Of Christmas;
+}
+
+@font-face {
+    font-family: NueueMachina;
+    src: url(../../assets/fonts/NeueMachina-Regular.otf);
+}
+#machine_learning_heading{
+    font-family: NueueMachina;
+}
