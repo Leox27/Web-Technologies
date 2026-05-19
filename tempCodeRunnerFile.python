@@ -1,6 +1,0 @@
-import numpy as np
-
-arr = np.array([1, 2, 3], dtype=np.float32) # Explicit type
-print(arr.dtype) # float32
-arr_int = arr.astype(np.int32) # Convert float to int
-print(arr_int) # [1 2 3]

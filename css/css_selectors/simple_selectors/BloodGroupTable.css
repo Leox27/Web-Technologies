@@ -1,0 +1,69 @@
+/* 
+css rule sets definition
+selector{
+    css_property = css_property_value;
+    css_property = css_property_value;
+}
+*/
+
+/* group selector(,) */
+#blood_group_table{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#blood_group_table_caption{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#blood_group_table_head{
+    font-size: 35px;
+}
+
+#blood_group_table_body{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#blood_group_table_caption,#blood_group_table_head{
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+/* class selector(.) */
+.blood_group_table_head_cells{
+    border-radius: 10px;
+}
+
+.blood_group_table_body_cells{
+    border-radius: 10px;
+}
+
+/* group selector(,): for rows */
+#first_row,#third_row,#fifth_row,#seventh_row,#ninth_row{
+    background-color: lavenderblush;
+}
+#second_row,#fourth_row,#sixth_row,#eighth_row,#tenth_row{
+    background-color: lightgray;
+}
+
+/* OR
+
+(recommanded) */
+.laveder_blush_rows{
+    background-color: lavenderblush;
+}
+.light_gray_rows{
+    background-color: lightgray;
+}
+
+/* 
+class selector:
+Whenever we want to apply same css changes to the different elements and whenever we want to categorize the element, we go for class selector.
+
+group selector:
+Whenever we want to apply same css changes to the group of elements, we go for group selector.
+But, but group selector make css code clumsy, so we categorize the html elements by using "class selector" and we can select the group.
+ */
