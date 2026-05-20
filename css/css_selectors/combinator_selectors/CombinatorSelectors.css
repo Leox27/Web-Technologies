@@ -1,0 +1,62 @@
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+
+body{
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+#topic_heading{
+    font-size: 50px;
+    text-align: center;
+}
+
+#parent_block{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#child_block{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+}
+
+/* child selector(>) */
+#parent_block:hover>#child_block{
+    background-color: orange;
+}
+
+#grand_parent_element{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+}
+
+.apply_same_dimensions{
+    width: 50%;
+    height: 50%;
+}
+
+#parent_element{
+    background-color: yellowgreen;
+}
+
+#child_element{
+    background-color: gray;
+}
+
+#grand_child_element{
+    background-color: greenyellow;
+}
