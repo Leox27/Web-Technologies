@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 20px;
+}
+
+.division_blocks{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    float: left;
+}
+
+#linear_gradient_property{
+    background-image: linear-gradient(to bottom right, orange 50%, white, green);
+}
+
+#radial_gradient_property{
+    background-image: radial-gradient(circle at bottom right, violet, indigo, blue, green, yellow, orange, red);
+}
+
+#conic_gradient_property{
+    background-image: conic-gradient(violet, indigo, blue, green, yellow, orange, red);
+}
+
+.background_image_block{
+    width: 500px;
+    height: 500px;
+    float: right;
+    background-color: peachpuff;
+    border-radius: 25%;
+}
+
+#background_image_property{
+    background-image: url(../../../assets/images/BasketBall.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 80% 80%;
+}
