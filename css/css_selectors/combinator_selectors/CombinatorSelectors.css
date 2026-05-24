@@ -60,3 +60,72 @@ body{
 #grand_child_element{
     background-color: greenyellow;
 }
+
+#great_grand_child_block{
+    background-color: gray;
+}
+
+/* descendent selector (space) */
+#grand_parent_element:hover #child_element{
+    background-color: black;
+}
+
+#parent_element:hover #grand_child_element{
+    background-color: white;
+}
+
+#grand_parent_element:hover #great_grand_child_element{
+    background-color: black;
+}
+
+.color_blocks{
+    width: 100px;
+    height: 100px;
+    float: left;
+    cursor: pointer;
+}
+
+#navy_color_block{
+    background-color: navy;
+}
+
+#light_gray_color_block{
+    background-color: lightgray;
+}
+
+#black_color_block{
+    background-color: black;
+}
+
+#orange_color_block{
+    background-color: orange;
+}
+
+#white_color_block{
+    background-color: white;
+}
+
+#green_color_block{
+    background-color: green;
+}
+
+/* 
+adjacent sibling selector
+general sibling selector
+ */
+
+#navy_color_block:hover+#light_gray_color_block{
+    background-color: black;
+}
+
+#navy_color_block:hover~#black_color_block{
+    background-color: lightgray;
+}
+
+#orange_color_block:hover{   
+    background-color: green;
+}
+
+#orange_color_block:hover~#green_color_block{   
+    background-color: red;
+}
