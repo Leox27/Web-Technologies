@@ -9,7 +9,7 @@ body{
     margin: 20px;
 }
 
-.division_blocks{
+.color_gradient_blocks{
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -17,29 +17,31 @@ body{
     float: left;
 }
 
-#linear_gradient_property{
+#linear_gradient_block{
     background-image: linear-gradient(to bottom right, orange 50%, white, green);
 }
 
-#radial_gradient_property{
+#radial_gradient_block{
     background-image: radial-gradient(circle at bottom right, violet, indigo, blue, green, yellow, orange, red);
 }
 
-#conic_gradient_property{
+#conic_gradient_block{
     background-image: conic-gradient(violet, indigo, blue, green, yellow, orange, red);
 }
 
-.background_image_block{
+#background_image_block{
     width: 500px;
     height: 500px;
     float: right;
-    background-color: peachpuff;
     border-radius: 25%;
-}
-
-#background_image_property{
+    background-color: peachpuff;
     background-image: url(../../../assets/images/BasketBall.png);
-    background-size: 20%;
+    background-size: 50%;
     background-repeat: no-repeat;
+
+    /* Specific: background-position properties */
+    background-position-x: 50%;
+    background-position-y: 50%;
+    /* Shorthand: background-position properties */
     background-position: 80% 80%;
 }
