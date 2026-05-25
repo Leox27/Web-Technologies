@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+    background-image: url(../../../assets/images/Sun.png), url(../../../assets/images/Earth.png), url(../../../assets/images/Moon.png), url(../../../assets/images/InternationalSpaceStation.png), url(../../../assets/images/Asteroid.png), url(../../../assets/images/Space.png);
+    background-size: 35%, 20%, 8%, 11%, 10%, 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+    background-position: -225px -100px, 100px 2600px, 400px 2500px, 270px 2600px,center, center;
+    background-attachment: fixed, scroll, scroll, scroll, scroll, scroll;
+}
+
+#rocket_image{
+    width: 150%;
+}
+
+#rocket_image_marquee{
+    width: 20%;
+    height: 100%;
+    float: right;
+    /* background-color: aqua; */
+}
+
+#astronaut_image{
+    width: 150px;
+}
+
+#astronaut_parent_marquee{
+    width: 80%;
+    /* background-color: orange; */
+}
+
+#astronaut_child_marquee{
+    height: 3000px;
+    /* background-color: yellowgreen; */
+}
