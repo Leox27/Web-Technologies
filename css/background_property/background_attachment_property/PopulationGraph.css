@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    padding: 30px;
+}
+
+#population_graph_heading{
+    font-size: 50px;
+}
+#population_content{
+    color: navy;
+}
+#graph_content{
+    color: orange;
+}
+
+.country_headings{
+    font-size: 40px;
+    /* text-align: center; */
+    width: 140px;
+}
+#india_country_heading{
+    border-right: 1200px solid red;
+}
+#china_country_heading{
+    border-right: 1150px solid orange;
+}
+#usa_country_heading{
+    border-right: 300px solid green;
+}
