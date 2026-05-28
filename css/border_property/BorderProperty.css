@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    padding: 15px;
+}
+
+#topic_heading{
+    font-size: 45px;
+}
+
+.bordered_blocks{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-width: 30px;
+    border-color: gray;
+}
+
+#solid_bordered_block{
+    border-style: solid;
+}
+
+#dashed_bordered_block{
+    border-style: dashed;
+}
+
+#dotted_bordered_block{
+    border-style: dotted;
+}
+
+#double_bordered_block{
+    border-style: double;
+}
+
+#inset_bordered_block{
+    border-style: inset;
+}
+
+#outset_bordered_block{
+    border-style: outset;
+}
+
+#groove_bordered_block{
+    border-style: groove;
+}
+
+#ridge_bordered_block{
+    border-style: ridge;
+}
+
+#shorthand_property_bordered_block{
+    /* border specific properties */
+    border-width: 30px;
+    border-style: solid;
+    border-color: navy;
+
+    /* border shorthand properties */
+    /* border: width style color */
+    border: 30px solid navy;
+}
+
+#mixed_bordered_block{
+    /* For top-edge of the border */
+    border-top-width: 30px;
+    border-top-style: solid;
+    border-top-color: navy;
+    
+    /* For right-edge of the border */
+    border-right-width: 30px;
+    border-right-style: dashed;
+    border-right-color: orange;
+    
+    /* For bottom-edge of the border */
+    border-bottom-width: 30px;
+    border-bottom-style: dotted;
+    border-bottom-color: lightgray;
+
+    /* For bottom-edge of the border */
+    border-left-width: 30px;
+    border-left-style: double;
+    border-left-color: green;
+
+    /* specific side border shorthand property */
+    border-top: 30px solid navy;
+    border-right: 30px dashed orange;
+    border-bottom: 30px dotted lightgray;
+    border-left: 30px double green;
+}
