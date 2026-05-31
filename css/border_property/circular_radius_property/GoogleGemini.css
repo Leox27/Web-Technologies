@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+
+body{
+    padding: 25px;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+#google_gemini_icon_container{
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(to top right, deepskyblue, blueviolet);
+    /* border: 5px solid black; */
+    /* border-radius: 30%; */
+    /* overflow: hidden; */
+}
+
+.google_geminis{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    float: left;
+}
+
+#first_block{
+    border-bottom-right-radius: 100%;
+}
+#second_block{
+    border-bottom-left-radius: 100%;
+}
+#third_block{
+    border-top-right-radius: 100%;
+}
+#fourth_block{
+    border-top-left-radius: 100%;
+}
+
+#google_gemini_logo{
+    font-size: 225px;
+    text-align: center;
+    background-image: linear-gradient(to top right, deepskyblue, blueviolet);
+    color: transparent;
+    background-clip: text;
+}
