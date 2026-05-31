@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 30px;
+}
+
+.row{
+    width: 600px;
+    height: 300px;
+}
+
+.flower_petals{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#blue_color_petal,#green_color_petal{
+    border-radius: 50% 0%;
+}
+#red_color_petal,#yellow_color_petal{
+    border-radius: 0% 50%;
+}
+
+#red_color_petal{
+    background-color: red;
+    border-bottom-right-radius: 10%;
+}
+#green_color_petal{
+    background-color: green;
+    border-bottom-left-radius: 10%;
+}
+#yellow_color_petal{
+    background-color: yellow;
+    border-top-left-radius: 10%;
+}
+#blue_color_petal{
+    background-color: blue;
+    border-top-right-radius: 10%;
+}
