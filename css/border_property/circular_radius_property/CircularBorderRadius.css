@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    margin: 20px;
+}
+
+#topic_heading{
+    font-size: 50px;
+}
+
+.content_block{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+#circular_square_content{
+    background-color: lightblue;
+
+    /* specific edge border-radius property */
+    border-top-left-radius: 10%;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 50%;
+
+    /* Shorthand border-radius property */
+    /* One value border-radius property */
+    border-radius: 25%;
+    /* Two value border-radius property */
+    border-radius: 0% 50%;
+    border-radius: 50% 0%;
+    /* Three value border-radius property */
+    border-radius: 15% 35% 50%;
+    /* Four value border-radius property */
+    border-radius: 10% 25% 35% 50%;
+}
+
+#circular_circle_content{
+    background-color: gray;
+
+    /* specific edge border-radius property */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    /* Shorthand border-radius property */
+    border-radius: 50% 50% 50% 50%;
+}
