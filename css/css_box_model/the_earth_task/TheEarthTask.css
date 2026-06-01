@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    padding: 25px;
+}
+
+#earth_legend{
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 10%;
+    padding: 10px;
+    color: navy;
+}
+
+#earth_heading{
+    text-align: center;
+    margin-top: 120px;
+    padding: 2px;
+}
+
+.content_block{
+    color: transparent;
+}
+
+#earth_fieldset{
+    width: 350px;
+    height: 350px;
+    margin: 150px auto;
+    border: 5px solid navy;
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+#earth_fieldset:hover{
+    background-size: 40%;
+    background-position: center 20px;
+    border: 30px groove black;
+}
+#earth_fieldset:hover>#earth_legend{
+    margin-left: 22.5%;
+}
+#earth_fieldset:hover>.content_block{
+    color: navy;
+    padding: 5px;
+}
+
+/* 
+For the pixel -> Take percentage %
+*/
