@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    padding: 20px;
+    border: 10px solid navy;
+    margin: 20px;
+}
+
+#topic_heading{
+    width: fit-content;
+    font-size: 75px;
+    /* margin: 20px; */
+    border: 10px inset black;
+
+    /* Specific side padding specific property */
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    /* padding shorthand property */
+    padding: 10px;
+}
+
+.buttons{
+    font-size: 45px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+
+    /* Specific side margin specific properties */
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+
+    /* margin shorthand property */
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+#subscribe_button{
+    background-color: red;
+    border-radius: 50px;
+}
+
+#follow_button{
+    background-color: royalblue;
+    border-radius: 10px;
+}
+
+#earth_image{
+    width: 300px;
+    border: 30px groove cadetblue;
+}
