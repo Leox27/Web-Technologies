@@ -1,0 +1,178 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: productSans;
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#gmail_login_page_main_container{
+    width: 1136px;
+    height: 403px;
+    background-color: white;
+    border-radius: 28px;
+    margin: 115px auto 15px auto;
+}
+
+/* Gmail-Login-Left-Block */
+.gmail_login_page_main_blocks{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0px 35px 0px 35px;
+}
+
+#google_icon_image{
+    width: 55px;
+    margin-top: 30px;
+}
+
+#sign_in_heading{
+    font-size: 37px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+#sign_in_statement{
+    font-size: 17px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+/* Gmail-Login-Right-Block */
+#email_phone_fieldset{
+    width: 508.5px;
+    height: 64px;
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 109px 0px 0px -11px;
+}
+
+#gmail_phone_fieldset:hover{
+    border: 2.5px solid royalblue;
+}
+
+#email_phone_legend{
+    font-size: 13px;
+    padding: 0px 7px;
+    margin-left: 6px;
+    color: royalblue;
+}
+
+#email_phone_input_box{
+    font-size: 17px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+#forgot_email_button{
+    font-size: 15px;
+    color: rgb(61, 61, 255);
+    border: none;
+    outline: none;
+    margin: 7.5px 0px 0px -15px;
+    padding: 2px 4px;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#forgot_email_button:hover{
+    background-color: lavender;
+}
+
+#not_your_computer{
+    font-size: 14.85px;
+    font-weight: normal;
+    margin: 40px 0px 0px -11px;
+    color: rgb(102, 74, 74);
+}
+
+#google_support{
+    color: rgb(61, 61, 255);
+    text-decoration: none;
+}
+
+#google_support:hover{
+    text-decoration: underline;
+}
+
+#account_buttons_container{
+    width: 50%;
+    height: 10%;
+    float: right;
+    margin: 45px 10px;
+    padding-top: 11px;
+    /* background-color: red; */
+}
+
+#create_account_button{
+    width: 100%;
+    font-size: 14.5px;
+    border-radius: 20px;
+    margin-left: 27.5px;
+    padding: 10px 15px;
+    color: rgb(64, 64, 246);
+    cursor: pointer;
+    /* background-color: yellow; */
+}
+#create_account_button:hover{
+    background-color: lavender;
+}
+#next_button{
+    width: 78px;
+    text-align: center;
+    font-size: 15px;
+    float: right;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(39, 84, 218);
+    margin: -10px -10px 0px 0px;
+    padding: 11px 22px;
+    cursor: pointer;
+}
+
+#language_dropdown_list{
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: rgb(49, 49, 49);
+    background-color: whitesmoke;
+    margin: 5px 0px 0px 210px;
+    padding: 5px 10px;
+}
+#language_dropdown_list:hover{
+    border-radius: 8px;
+    background-color: lavender
+}
+
+#button_tools_container{
+    float: right;
+    margin: 0px 192px 0px 0px;
+}
+
+.button_tools{
+    font-size: 12.6px;
+    border: none;
+    outline: none;
+    color: rgb(49, 49, 49);
+    background-color: whitesmoke;
+    /* background-color: yellow; */
+    margin-right: 14px;
+    padding: 8px;
+    cursor: pointer;
+}
+.button_tools:hover{
+    border-radius: 8px;
+    background-color: lavender;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Google accounts</title>
+    <link rel="stylesheet" href="GmailLoginPage.css">
+    <link rel="icon" href="../../../../assets/images/GoogleIcon.png">
+</head>
+<body>
+    <main id="gmail_login_page_main_container">
+        <div id="google_icon_block" class="gmail_login_page_main_blocks">
+            <img id="google_icon_image" src="../assets/images/GoogleIcon.png" alt="GoogleIcon">
+            <h1 id="sign_in_heading">Sign in</h1>
+            <p id="sign_in_statement">with your Google Account. This account will be available to other Google apps in the browser.</p>
+        </div>
+        <div id="login_page_block" class="gmail_login_page_main_blocks">
+            <fieldset id="email_phone_fieldset">
+                <legend id="email_phone_legend">Email or phone</legend>
+                <input id="email_phone_input_box" type="text" placeholder="Email or phone" name="emailOrPhone">
+            </fieldset>
+            <button id="forgot_email_button">Forgot email?</button>
+            <p id="not_your_computer">
+                Not your computer? Use Guest mode to sign in privately. <a id="google_support" href="https://support.google.com/chrome/answer/6130773?hl=en">Learn more about<br>using Guest mode</a>
+            </p>
+            <div id="account_buttons_container">
+                <buttons id="create_account_button" class="account_buttons">Create account</buttons>
+                <buttons id="next_button" class="account_buttons">Next</buttons>
+            </div>
+        </div>
+    </main>
+    <select name="language" id="language_dropdown_list">
+        <option value="Marathi (india)" class="language_blocks">Marathi (india)</option>
+        <option value="Hindi (india)" class="language_blocks">Hindi (india)</option>
+        <option value="English (UK)" class="language_blocks">English (UK)</option>
+        <option value="English (United kingdom)" class="language_blocks">English (United kingdom)</option>
+        <option value="Tamil" class="language_blocks">Tamil (india)</option>
+    </select>
+    <div id="button_tools_container">
+        <button class="button_tools">Help</button>
+        <button class="button_tools">Privacy</button>
+        <button class="button_tools">Terms</button>
+    </div>
+</body>
+</html>
