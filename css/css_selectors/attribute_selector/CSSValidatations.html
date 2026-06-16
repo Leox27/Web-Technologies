@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSValidations</title>
+    <link rel="stylesheet" href="CSSValidatations.css">
+</head>
+<body>
+    <h1 id="css_validations_form_heading">
+        <span id="css_content" class="css_validations_form_headings">CSS</span>
+        <span id="validation_content" class="css_validations_form_headings">Validation</span>
+        <span id="form_content" class="css_validations_form_headings">Form</span>
+    </h1>
+
+    <form action="" id="css_validations_form">
+        <div id="username_inputfield_container" class="input_field_containers">
+            <label id="username_label_content" class="input_fields_labels">username</label>
+            <br>
+            <input type="text" name="username" class="input_fields" minlength="3" required>
+        </div>
+        <div id="password_inputfield_container" class="input_field_containers">
+            <label id="password_label_content" class="input_fields_labels">Password</label>
+            <br>
+            <input type="password" name="password" class="input_fields" minlength="8" required>
+        </div>
+        <div id="age_inputfield_container" class="input_field_containers">
+            <label id="age_label_content" class="input_fields_labels">Age</label>
+            <br>
+            <input type="number" name="age" class="input_fields" minlength="18" required>
+        </div>
+        <div id="gender_inputfield_container" class="input_field_containers">
+            <label id="gender_label_content" class="input_fields_labels">Gender</label>
+            <br>
+            <input type="radio" name="gender" required><span class="radio_buttons_labels">Male</span>
+            <input type="radio" name="gender" required><span class="radio_buttons_labels">Female</span>
+            <input type="radio" name="gender" required><span class="radio_buttons_labels">Transgender</span>
+            <input type="radio" name="gender" required><span class="radio_buttons_labels">Transwomen</span>
+        </div>
+        <div id="terms_conditions_checkbox_container" class="input_field_containers">
+            <input type="checkbox" name="terms_And_Condions" required><span id="terms_and_conditions_label">Terms and Conditions</span>
+            <br>
+            <input type="checkbox" name="declaration" required><span id="checkbox_label">Declaration</span>
+        </div>
+        <br>
+        <center>
+            <input type="submit" name="validation" id="validate_button" value="Validate">
+        </center>
+    </form>
+</body>
+</html>
