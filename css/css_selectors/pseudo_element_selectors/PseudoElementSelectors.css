@@ -156,6 +156,7 @@ body::-webkit-scrollbar-button{
     margin-top: 50px;
     outline: none;
     -webkit-appearance: none;
+    appearance: none;
 }
 #brightness_slider::-webkit-slider-runnable-track{
     height: 50px;
