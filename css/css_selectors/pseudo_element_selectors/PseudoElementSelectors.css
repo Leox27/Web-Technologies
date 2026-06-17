@@ -1,0 +1,200 @@
+/* pseudo-class-selectors
+selector:pseudo-class-selectors{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+*/
+
+/* pseudo-element-selectors
+selector::pseudo-element-selectors{
+    css-property: css-property-value;
+    css-property: css-property-value;
+}
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+.input_boxes{
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: navy;
+    background-color: lightgray;
+    padding: 15px;
+}
+.input_boxes::placeholder{
+    color: navy;
+}
+
+.course_headings{
+    font-size: 45px;
+    color: navy;
+    cursor: pointer;
+}
+#core_java_heading{
+    margin-top: 30px;
+}
+
+#core_java_heading:hover::before{
+    content: "Core";
+}
+#web_development_heading:hover::after{
+    content: "Development";
+}
+.course_headings:hover::before, .course_headings:hover::after{
+    color: gray;
+}
+
+#topic_heading_tools_container{
+    width: 100%;
+    font-size: 30px;
+    margin-top: 45px;
+}
+.topic_heading_tools{
+    float: left;
+    margin-right: 20px;
+}
+#pseudo_content::first-letter, #element_content::first-letter, #selectors_content::first-letter{
+    color: navy;
+}
+
+#topic_description{
+    font-size: 30px;
+    margin-top: 130px;
+}
+#topic_description::first-letter{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+#topic_description::first-line{
+    color: navy;
+}
+#topic_description::selection, #topic_heading_tools::selection{
+    color: greenyellow;
+    background-color: gray;
+}
+
+#training_domain_list_heading{
+    font-size: 50px;
+    margin-top: 20px;
+}
+#training_domain_ordered_list{
+    font-size: 30px;
+    margin-left: 50px;
+}
+#qspider_ordered_list, #jspider_ordered_list{
+    margin-left: 50px;
+}
+
+.training_domain_ordered_list_items::marker{
+    color: red;
+}
+.qspider_ordered_list_items::marker, .jspider_ordered_list_items::marker{
+    color: navy;
+}
+
+/* Space: scroll-bar */
+/* body::-webkit-scrollbar{
+    width: 50px;
+    background-image: url(../../../assets/images/Space.png);
+    background-size: 1000px;
+}
+body::-webkit-scrollbar-thumb{
+    background-image: url(../../../assets/images/Earth.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar-button{
+    height: 45px;
+    background-image: url(../../../assets/images/Sun.png);
+    background-size: 100%;
+}
+body::-webkit-scrollbar-button:active{
+    background-image: url(../../../assets/images/Moon.png);
+} */
+
+/* Professional: scroll-bar */
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: lightgray;
+    border-radius: 50px;
+    cursor: pointer;
+}
+body::-webkit-scrollbar-thumb{
+    width: 100%;
+    background-color: gray;
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-thumb:active{
+    background-color: rgb(90, 90, 90);
+}
+body::-webkit-scrollbar-button{
+    height: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Brightness: [runnable-track, thumb] */
+#brightness_slider{
+    width: 25%;
+    margin-top: 50px;
+    outline: none;
+    -webkit-appearance: none;
+}
+#brightness_slider::-webkit-slider-runnable-track{
+    height: 50px;
+    background-color: navy;
+    border-radius: 10px;
+    -webkit-appearance: none;
+}
+#brightness_slider::-webkit-slider-thumb{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+#brightness_slider::-webkit-slider-thumb:active{
+    background-color: gray;
+}
+
+/* File-Picker */
+#file_picker{
+    font-size: 35px;
+    color: navy;
+    margin-top: 20px;
+    outline: none;
+}
+#file_picker::-webkit-file-upload-button{
+    font-size: 40px;
+    font-family: ProductSans;
+    font-weight: bold;
+    color: white;
+    background-color: navy;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#file_picker::-webkit-file-upload-button:active{
+    color: navy;
+    background-color: lightgray;
+}
