@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+body{
+    margin: 25px;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+#topic_heading{
+    font-size: 50px;
+    text-align: center;
+}
+#planet_content{
+    color: navy;
+}
+#images_content{
+    color: gray;
+}
+
+#space_container{
+    width: 500px;
+    height: 500px;
+    background-image: url(../../assets/images/Sun.png), url(../../assets/images/Space.png);
+    background-size: 95%, 150%;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 150px;
+    margin: 20px auto;
+
+    /* transition-property */
+    transition: all 1000ms;
+}
+
+#space_container:hover{
+    background-image: url(../../assets/images/Earth.png), url(../../assets/images/Sun.png), url(../../assets/images/Space.png);
+    background-size: 30%, 90%, 150%;
+    background-position: 300px 300px, center, center;
+}
