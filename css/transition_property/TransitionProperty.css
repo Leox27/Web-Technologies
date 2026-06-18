@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+body{
+    margin: 25px;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+#topic_heading{
+    font-size: 50px;
+}
+
+#transition_property_container{
+    width: 250px;
+    height: 250px;
+    border: 30px solid gray;
+    background-color: greenyellow;
+    margin-top: 50px;
+    cursor: pointer;
+    /* To not flicker the element here we use transition-property */
+    
+    /* Specific: transition-property */
+    transition-property: width, height, border, background-color, border-radius;
+    transition-duration: 5000ms, 5000ms, 10000ms, 20000ms, 30000ms;
+    
+    /* Shorthand: transition-property */
+    transition: width 5000ms, height 5000ms, border 10000ms, background-color 20000ms, border-radius 30000ms;
+    
+    /* In case, if customer wants transition-duration same we go for below code */
+    transition: all 5000ms;
+}
+
+#transition_property_container:hover{
+    width: 500px;
+    height: 500px;
+    border: 60px solid gray;
+    background-color: purple;
+    border-radius: 125px;
+}
