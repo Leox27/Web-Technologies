@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 25px;
+}
+
+#vehicle_images_container{
+    border-bottom: 30px solid black;
+    cursor: pointer;
+}
+
+.vehicle_images{
+    width: 175px;
+    transition: margin-left 5000ms;
+}
+
+#vehicle_images_container:hover>.vehicle_images{
+    margin-left: 88%;
+}
+
+#cycle_image{
+    transition-timing-function: ease;
+}
+#bike_gt_image{
+    transition-timing-function: ease-in;
+    transition-delay: 1000ms;
+}
+#car_bugatti_image{
+    transition-timing-function: ease-in-out;
+    transition-delay: 4000ms;
+}
+#lorry_image{
+    transition-timing-function: ease-in-out;
+    transition-delay: 6000ms;
+}
+#buldozer_baba_image{
+    transition-timing-function: linear;
+    transition-delay: 8250ms;
+}
