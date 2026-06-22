@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+#rainbow_heading{
+    font-size: 150px;
+    width: fit-content;
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 50%;
+    /* background-size: 1000%; */
+    background-position: left;
+    background-clip: text;
+    color: transparent;
+    margin: 25px auto;
+    cursor: pointer;
+
+    /* Transition specific property */
+    /* transition-property: background-position;
+    transition-duration: 5000ms;
+    transition-timing-function: ease-in-out; */
+
+    /* Transition shorthand property */
+    transition: background-position 5000ms ease-in-out;
+}
+
+#rainbow_heading:hover{
+    background-position: right;
+}
