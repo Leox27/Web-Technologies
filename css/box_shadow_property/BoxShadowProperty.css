@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+#box_sizing_property_heading{
+    font-size: 50px;
+}
+
+#navy_color_block{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: navy;
+    margin-top: 20px;
+    /* transition: box-shadow; */
+    cursor: pointer;
+}
+
+#navy_color_block:hover{
+    /* 
+    outside box shadow
+    box-shadow: horizontal-offset vertical-offset spread-amount shadow-color;
+    */
+
+    box-shadow: 0px -10px 0px lightgray;
+    box-shadow: 10px 0px 0px lightgray;
+    box-shadow: 0px 10px 0px lightgray;
+    box-shadow: -10px 0px 0px lightgray;
+
+    box-shadow: -10px -10px 0px lightgray;
+    box-shadow: 10px -10px 0px lightgray;
+    box-shadow: 10px 10px 0px lightgray;
+    box-shadow: -10px 10px 0px lightgray;
+}
+
+#click_here_button{
+    font-size: 100px;
+    font-weight: bold;
+    width: 500px;
+    height: 200px;
+    /* background-color: lightgray; */
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+
+    /* outside: box-shadow property */
+    box-shadow: -10px -10px 0px gray;
+    box-shadow: 10px -10px 0px gray;
+    box-shadow: 10px 10px 0px gray;
+    box-shadow: -10px 10px 5px gray;
+
+    /* inside: box-shadow property */
+    /* 
+    inside box shadow
+    box-shadow: inset horizontal-offset vertical-offset spread-amount shadow-color;
+    */
+    box-shadow: inset 15px 15px 15px gray;
+    box-shadow: inset -15px 15px 15px gray;
+    box-shadow: inset -15px -15px 15px gray;
+    box-shadow: inset 15px -15px 15px gray;
+
+    cursor: pointer;
+}
