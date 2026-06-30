@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+
+
+#navigation_bar_contents_heading{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: peachpuff;
+}
+
+#aside_web_development_list_section{
+    width: 450px;
+    height: 500px;
+    background-color: lightgray;
+    padding: 15px;
+
+    /*
+    overflow property :-
+    overflow: visible; - default 
+    overflow: auto; - vertical_scroll_bar and make all content scrollable up-down
+    overflow: scroll; - horizontal_scroll_bar and make all content scrollable up-down as well as right-left
+    */
+
+    overflow: scroll;
+    cursor: pointer;
+}
+
+#web_technologies_heading{
+    font-size: 45px;
+}
+#web_technologies_heading, .arrows{
+    color: navy;
+}
+
+#web_development_unordered_lists{
+    font-weight: bold;
+}
+
+.web_development_lists{
+    font-size: 30px;
+}
+
+.web_development_list_items{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 75px;
+}
+.web_development_list_items:hover{
+    font-size: 22px;
+    font-weight: bold;
+    background-color: wheat;
+    padding-left: 7px;
+    /* border-radius: 20px; */
+}
+
+#aside_web_development_list_section::-webkit-scrollbar{
+    width: 12.5px;
+    background-color: azure;
+    border-radius: 3px;
+}
+#aside_web_development_list_section::-webkit-scrollbar-button{
+    height: 12.5px;
+    background-color: rgb(95, 158, 160);
+}
+#aside_web_development_list_section::-webkit-scrollbar-thumb{
+    height: auto;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+#aside_web_development_list_section::-webkit-scrollbar-button:active{
+    background-color: rgb(65, 128, 130);
+}
+#aside_web_development_list_section::-webkit-scrollbar-thumb:active{
+    background-color: rgb(100, 100, 100);
+}
