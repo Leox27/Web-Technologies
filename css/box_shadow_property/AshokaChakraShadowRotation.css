@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+#ashoka_chakra_shadow_rotation_heading{
+    font-size: 75px;
+    width: fit-content;
+    font-weight: bold;
+    background-image: linear-gradient(to right, orange, lightgray, green);
+    background-clip: text;
+    color: transparent;
+    margin: 0px auto;
+}
+
+#ashoka_chakra_container{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url(../../assets/images/AshokaChakra.png);
+    background-size: 100%;
+    margin: 110px auto;
+    transition: box-shadow 2000ms ease-in-out, transform 2000ms ease-in-out;
+    cursor: pointer;
+}
+
+#ashoka_chakra_container:hover{
+    box-shadow: 0px -95px 25px orange, 105px 75px 25px lightgray, -105px 75px 25px green;
+    transform: scale(1.2) rotate(720deg);
+}
