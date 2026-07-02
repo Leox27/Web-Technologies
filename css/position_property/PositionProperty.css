@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 25px;
+}
+
+#navy_color_block{
+    width: 150px;
+    height: 150px;
+    background-color: navy;
+    border-radius: 20%;
+
+    /* relative will make the element to be
+    positioned from it's static(default) position */
+    position: relative;
+
+    /* offset properties */
+    top: 10px;
+    left: 10px;
+}
+
+#red_color_block{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 20%;
+
+    /* absolute will make the element to be
+    positioned from it's parent element position */
+    position: absolute;
+
+    /* offset properties */
+    /* top: 10px;
+    left: 10px; */
+}
+
+#lightgray_color_block{
+    width: 125px;
+    height: 125px;
+    background-color: lightgray;
+    border-radius: 20%;
+
+    /* absolute will make the element to be
+    positioned from it's parent element position */
+    position: absolute;
+
+    /* offset properties */
+    top: 25%;
+    left: 25%;
+}
