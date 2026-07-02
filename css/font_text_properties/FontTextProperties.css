@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    padding: 30px;
+}
+
+#course_heading{
+    color: orange;
+
+    /* font properties */
+    font-size: 75px;
+
+    /* font-weight: bold | normal | bolder | lighter; */
+    font-weight: bold;
+
+    /* font-style: normal | italic; */
+    font-style: normal;
+
+    /* font-variant: normal | small-caps; */
+    font-variant: small-caps;
+
+    /* text properties */
+
+    /* text-align: left | center | justify | right; */
+    text-align: center;
+
+    /* 
+    text-decoration shorthand property
+    text-decoration: line | thickness | style | color;
+    */
+    text-decoration: underline 10px solid red;
+
+    /* text-decoration specific properties */
+    /* text-decoration-line: underline | overline | line-through; */
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 10px;
+
+    /* text-decoration-style: solid | dotted | dashed | double | wavy; */
+    text-decoration-style: solid;
+    text-decoration-color: orange;
+
+    /* text-transform: uppercase | lowercase | capitalize; */
+    text-transform: capitalize;
+
+    /* text-shadow: horizontal-offset vertical-offset
+    spread-amount shadow-color; */
+    text-shadow: 3px -3px 0px black;
+}
+
+#course_description {
+    font-size: 25px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: rgb(255, 232, 190);
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px orange, inset 0px 0px 15px orange;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 30px;    
+}
