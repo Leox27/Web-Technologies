@@ -1,0 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#circular_block{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+
+     /* Using the shorthand property */
+    /* 
+    animation: animation-duration 
+               animation-timing-function    (linear | ease-in-out | ease | ease-in)
+               animation-delay 
+               animation-iteration-count    (value | infinite)
+               animation-direction          (normal | alternate)
+               animation-fill-mode          (none | forwards)
+               animation-play-state         (running | paused)
+               animation-name;              @keyframe name (rule)
+    */
+    animation-name: JumpingBall;
+    animation-duration: 10000ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 500ms;
+
+}
+
+@keyframes JumpingBall {
+    0%{
+        transform: translate(0px, 0px);
+        background-color: red;
+        /* box-shadow: 0px -25px 40px yellow; */
+    }
+    25%{
+        transform: translate(0px, 550px) scale(0);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(275px, 275px) scale(2);
+        background-color: navy;
+    }
+    75%{
+        transform: translate(550px, 550px) scale(0);
+        background-color: green;
+    }
+    100%{
+        transform: translate(550px, 0px);
+        background-color: white;
+        box-shadow: inset -1px -1px 0px lightgray;
+    }
+}
