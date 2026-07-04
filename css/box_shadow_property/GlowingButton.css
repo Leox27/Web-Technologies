@@ -23,15 +23,19 @@ body{
     border: 1px solid white;
     border-radius: 100px;
     margin: 172.5px 317.5px;
-    transition: box-shadow 250ms ease-in-out;
+    transition: box-shadow 0ms ease-in-out;
     cursor: pointer;
 }
 
 #glowing_button:hover{
-    background-color: black;
+    background-color: white;
     box-shadow: 0px 0px 100px white, 0px 0px 300px white, 0px 0px 500px white, 0px 0px 700px white, 0px 0px 900px white, 0px 0px 1100px white, 0px 0px 1500px white, 0px 0px 2000px white, 0px 0px 3000px white;
 }
-#glowing_button:active{
-    background-color: white;
-    box-shadow: none;
+#batman_image{
+    scale: 2;
 }
+
+/* #glowing_button:active{
+    background-color: white;
+    box-shadow: 0px 0px 100px white, 0px 0px 300px white, 0px 0px 500px white, 0px 0px 700px white, 0px 0px 900px white, 0px 0px 1100px white, 0px 0px 1500px white, 0px 0px 2000px white, 0px 0px 3000px white;
+} */
