@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 25px;
+}
+
+#indian_flag_blocks{
+    width: 100%;
+    height: 450px;
+    border-radius: 50px;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.color_blocks{
+    width: 100%;
+    height: 150px;
+}
+#orange_color_block{
+    background-color: orange;
+}
+#white_color_block{
+    background-color: white;
+}
+#green_color_block{
+    background-color: green;
+}
+
+#ashoka_chakra{
+    width: 150px;
+    position: relative;
+    /* offset properties */
+    left: 45%;
+
+}
+
+#indian_flag_blocks:hover #ashoka_chakra{
+    animation: animateAshokChakra 5000ms linear infinite;
+}
+
+@keyframes animateAshokChakra {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
