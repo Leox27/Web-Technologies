@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 30px;
+}
+
+#course_heading{
+    font-size: 50px;
+
+    animation-name: animateCourseHeading;
+    animation-duration: 1000ms;
+    /* animation-delay: 2000ms; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    /* 
+    animation-direction: normal;
+    normal is default value and normal will control the animation-direction effect direction from "from state" to "to state" and animation-effect ends, animation-effect will flicker
+    */
+    animation-direction: normal;
+
+    /* 
+    animation-direction: reverse;
+    reverse is not a default value and reverse will control the animation-effect direction from "to state" to "from state" and animation-effect ends, animation-effect will flicker
+    */
+    animation-direction: reverse;
+    
+    /* 
+    animation-direction: alternate;
+    alternate is not a default value and alternate will control the animation-effect direction from "from state" to "to state" and "from state" to "to state" and when animation-effect ends, animation-effect will not flicker 
+    */
+    animation-direction: alternate;
+
+    /* 
+    animation-direction: alternate-reverse;
+    alternate-reverse not a default value and alternate-reverse will control the animation-effect direction from "to state" to "from state" and "from state" to "to state" and when animation-effect ends, animation-effect will not flicker 
+    */
+    animation-direction: alternate-reverse;
+}
+
+/* animation logics */
+@keyframes animateCourseHeading {
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
