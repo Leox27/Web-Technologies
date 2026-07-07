@@ -21,14 +21,14 @@
                animation-play-state         (running | paused)
                animation-name;              @keyframe name (rule)
     */
-    animation-name: JumpingBall;
+    animation-name: animateMovingBall;
     animation-duration: 10000ms;
     animation-timing-function: ease-in-out;
     animation-delay: 500ms;
 
 }
 
-@keyframes JumpingBall {
+@keyframes animateMovingBall {
     0%{
         transform: translate(0px, 0px);
         background-color: red;
