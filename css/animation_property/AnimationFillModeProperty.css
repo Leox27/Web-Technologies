@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* default code */
+#navy_color_block{
+    width: 100px;
+    height: 100px;
+    background-color: navy;
+    border-radius: 20%;
+
+    position: relative;
+    /* offset properties */
+    top: 275px;
+    left: 725px;
+
+    cursor: pointer;
+}
+
+#navy_color_block:hover{
+    animation-name: animateColorBlock;
+    animation-duration: 5000ms;
+    animation-delay: 1000ms;
+    animation-timing-function: ease-in-out;
+
+    /* 
+    animation-fill-mode: none; 
+    none is the default value and none will control the code filling mode from "default code" to "from code" to "to code" and to "default code" 
+
+    | default_code -> from_code -> to_code -> default_code |
+    */
+    animation-fill-mode: none;
+
+    /* 
+    animation-fill-mode: forwards; 
+    forwards is not a default value and forwards will control the code filling mode from "default code" to "from code" to "to code" 
+    
+    | default_code -> from_code -> to_code |
+    */
+    animation-fill-mode: forwards;
+
+    /* 
+    animation-fill-mode: backwards;
+    backwards is not s default value and backwards will control the code filling mode from "from code" to "to code" to "default code" 
+    
+    from_code -> to_code -> default_code |
+    */
+    animation-fill-mode: backwards;
+
+    /* 
+    animation-fill-mode: both;
+    both is not a default value and both will control the code filling mode from "from code" to "to code" 
+    
+    | from_code -> to_code | 
+    */
+    animation-fill-mode: both;
+}
+
+/* animation logics */
+@keyframes animateColorBlock {
+    from, to{
+        background-color: lightgray;
+        transform: rotate(0deg) scale(1);
+    }
+    25%{
+        background-color: lightgray;
+        transform: rotate(360deg) scale(1.5);
+    }
+    75%{
+        background-color: lightgray;
+        transform: rotate(-360deg) scale(1.5);
+    }
+}
