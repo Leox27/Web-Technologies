@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    margin: 25px;
+}
+
+#gallery_images_heading{
+    font-size: 50px;
+    text-align: center;
+}
+
+#gallery_images_container{
+    width: 1200px;
+    height: 550px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    position: relative;
+    top: 25px;
+    left: 144px;
+
+    background-image: url(../../assets/images/Anaconda.jpg);
+    background-size: 100% 95%;
+}
+
+#gallery_images_container:hover{
+    /* 
+    animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animateGalleryImages 40000ms ease-in-out 0ms infinite normal none;
+}
+/* animation logics */
+@keyframes animateGalleryImages {
+    /* first keyframe */
+    10%{
+        background-image: url(../../assets/images/Forest.jpg);
+    }
+    /* second keyframe */
+    20%{
+        background-image: url(../../assets/images/Glacier.jpg);
+    }
+    /* third keyframe */
+    40%{
+        background-image: url(../../assets/images/Ocean.jpg);
+    }
+    /* fourth keyframe */
+    60%{
+        background-image: url(../../assets/images/GreenMountain.jpg);
+    }
+    /* fifth keyframe */
+    80%{
+        background-image: url(../../assets/images/MountHimalayas.jpg);
+    }
+    /* last keyframe */
+    100%{
+        background-image: url(../../assets/images/Penguin.jpg);
+    }
+}
