@@ -30,18 +30,24 @@ body{
     /* 
     animation-direction: reverse;
     reverse is not a default value and reverse will control the animation-effect direction from "to state" to "from state" and animation-effect ends, animation-effect will flicker
+
+    | to_state -> from-state |
     */
     animation-direction: reverse;
     
     /* 
     animation-direction: alternate;
-    alternate is not a default value and alternate will control the animation-effect direction from "from state" to "to state" and "from state" to "to state" and when animation-effect ends, animation-effect will not flicker 
+    alternate is not a default value and alternate will control the animation-effect direction from "from state" to "to state" and "to state" to "from state" and when animation-effect ends, animation-effect will not flicker 
+
+    | from-state -> to_state -> to_state -> from_state |
     */
     animation-direction: alternate;
 
     /* 
     animation-direction: alternate-reverse;
     alternate-reverse not a default value and alternate-reverse will control the animation-effect direction from "to state" to "from state" and "from state" to "to state" and when animation-effect ends, animation-effect will not flicker 
+
+    | to_state -> from_state -> from-state -> to_state |
     */
     animation-direction: alternate-reverse;
 }
